@@ -1,11 +1,4 @@
 //
-//  DeveloperViewController.swift
-//  ScrumPoker
-//
-//  Created by Wesley Marra on 02/11/21.
-//
-
-//
 //  SaveDeveloperViewController.swift
 //  ScrumPoker
 //
@@ -41,7 +34,6 @@ class DeveloperViewController: UIViewController {
         developerBehavior.accept(Developer(nome: name, email: email))
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()

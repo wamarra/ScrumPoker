@@ -12,7 +12,18 @@ import RxAlamofire
 struct DeveloperClient {
     
     static func saveDeveloper(developer: Developer) -> Observable<Developer> {
-        return RxAlamofire.requestDecodable(.post, "\(Constant.kBaseURL)/desenvolvedor")
+        /*if let jsonData = try? JSONEncoder().encode(developer) {
+            return RxAlamofire.upload(
+                jsonData,
+                to: "\(Constant.kBaseURL)/desenvolvedor",
+                method: .post,
+                headers: nil)
+                .map { response in
+                    print(response)
+                }
+        }*/
+        return RxAlamofire.requestDecodable(
+            .post, "\(Constant.kBaseURL)/desenvolvedor", parameters: ["nome": [developer.nome], "email":[developer.email]])
             .map { (response, developer: Developer) in
                 return developer
             }
