@@ -7,23 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4DC7F2273139E4009D49B4 /* DeveloperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7D9273139E3009D49B4 /* DeveloperPresenter.swift */; };
+		1B4DC7F3273139E4009D49B4 /* DeveloperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4DC7DC273139E3009D49B4 /* DeveloperViewController.xib */; };
+		1B4DC7F4273139E4009D49B4 /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7DD273139E3009D49B4 /* DeveloperViewController.swift */; };
+		1B4DC7F5273139E4009D49B4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7DF273139E3009D49B4 /* Constant.swift */; };
+		1B4DC7F6273139E4009D49B4 /* SprintInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7E1273139E3009D49B4 /* SprintInteractor.swift */; };
+		1B4DC7F7273139E4009D49B4 /* VoteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7E2273139E3009D49B4 /* VoteInteractor.swift */; };
+		1B4DC7F8273139E4009D49B4 /* StoryInteractor.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7E3273139E3009D49B4 /* StoryInteractor.swift.swift */; };
+		1B4DC7F9273139E4009D49B4 /* DeveloperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7E4273139E3009D49B4 /* DeveloperInteractor.swift */; };
+		1B4DC7FA273139E4009D49B4 /* VoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7E7273139E3009D49B4 /* VoteClient.swift */; };
+		1B4DC7FB273139E4009D49B4 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7E8273139E3009D49B4 /* Vote.swift */; };
+		1B4DC7FC273139E4009D49B4 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7EA273139E3009D49B4 /* Developer.swift */; };
+		1B4DC7FD273139E4009D49B4 /* DeveloperClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7EB273139E3009D49B4 /* DeveloperClient.swift */; };
+		1B4DC7FE273139E4009D49B4 /* SprintClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7ED273139E3009D49B4 /* SprintClient.swift */; };
+		1B4DC7FF273139E4009D49B4 /* Sprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7EE273139E3009D49B4 /* Sprint.swift */; };
+		1B4DC800273139E4009D49B4 /* StoryClient.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7F0273139E3009D49B4 /* StoryClient.swift.swift */; };
+		1B4DC801273139E4009D49B4 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7F1273139E3009D49B4 /* Story.swift */; };
 		1B7DBB05273137D600DAD151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DBB04273137D600DAD151 /* AppDelegate.swift */; };
-		1B7DBB07273137D600DAD151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DBB06273137D600DAD151 /* SceneDelegate.swift */; };
-		1B7DBB09273137D600DAD151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DBB08273137D600DAD151 /* ViewController.swift */; };
-		1B7DBB0C273137D600DAD151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DBB0A273137D600DAD151 /* Main.storyboard */; };
 		1B7DBB0E273137D600DAD151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DBB0D273137D600DAD151 /* Assets.xcassets */; };
 		1B7DBB11273137D600DAD151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DBB0F273137D600DAD151 /* LaunchScreen.storyboard */; };
+		1B7DBB1A2731386000DAD151 /* DeveloperRouter.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DBB192731386000DAD151 /* DeveloperRouter.swift.swift */; };
+		72C0A53BF1DCDF9E15943A39 /* Pods_ScrumPoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C54AEBCB3AF15A7DA40295 /* Pods_ScrumPoker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10B0AD252BB48DB6FEE2A7A9 /* Pods-ScrumPoker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumPoker.debug.xcconfig"; path = "Target Support Files/Pods-ScrumPoker/Pods-ScrumPoker.debug.xcconfig"; sourceTree = "<group>"; };
+		1B4DC7D9273139E3009D49B4 /* DeveloperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperPresenter.swift; sourceTree = "<group>"; };
+		1B4DC7DC273139E3009D49B4 /* DeveloperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeveloperViewController.xib; sourceTree = "<group>"; };
+		1B4DC7DD273139E3009D49B4 /* DeveloperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
+		1B4DC7DF273139E3009D49B4 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1B4DC7E1273139E3009D49B4 /* SprintInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SprintInteractor.swift; sourceTree = "<group>"; };
+		1B4DC7E2273139E3009D49B4 /* VoteInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteInteractor.swift; sourceTree = "<group>"; };
+		1B4DC7E3273139E3009D49B4 /* StoryInteractor.swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryInteractor.swift.swift; sourceTree = "<group>"; };
+		1B4DC7E4273139E3009D49B4 /* DeveloperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperInteractor.swift; sourceTree = "<group>"; };
+		1B4DC7E7273139E3009D49B4 /* VoteClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteClient.swift; sourceTree = "<group>"; };
+		1B4DC7E8273139E3009D49B4 /* Vote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		1B4DC7EA273139E3009D49B4 /* Developer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		1B4DC7EB273139E3009D49B4 /* DeveloperClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperClient.swift; sourceTree = "<group>"; };
+		1B4DC7ED273139E3009D49B4 /* SprintClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SprintClient.swift; sourceTree = "<group>"; };
+		1B4DC7EE273139E3009D49B4 /* Sprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprint.swift; sourceTree = "<group>"; };
+		1B4DC7F0273139E3009D49B4 /* StoryClient.swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryClient.swift.swift; sourceTree = "<group>"; };
+		1B4DC7F1273139E3009D49B4 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		1B7DBB01273137D600DAD151 /* ScrumPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7DBB04273137D600DAD151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B7DBB06273137D600DAD151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B7DBB08273137D600DAD151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B7DBB0B273137D600DAD151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B7DBB0D273137D600DAD151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B7DBB10273137D600DAD151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B7DBB12273137D600DAD151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B7DBB192731386000DAD151 /* DeveloperRouter.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperRouter.swift.swift; sourceTree = "<group>"; };
+		29D5E055B1760BFBD04629C3 /* Pods-ScrumPoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumPoker.release.xcconfig"; path = "Target Support Files/Pods-ScrumPoker/Pods-ScrumPoker.release.xcconfig"; sourceTree = "<group>"; };
+		36C54AEBCB3AF15A7DA40295 /* Pods_ScrumPoker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrumPoker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,111 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C0A53BF1DCDF9E15943A39 /* Pods_ScrumPoker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4DC7D8273139E3009D49B4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7D9273139E3009D49B4 /* DeveloperPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1B4DC7DA273139E3009D49B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7DB273139E3009D49B4 /* Developer */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B4DC7DB273139E3009D49B4 /* Developer */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7DC273139E3009D49B4 /* DeveloperViewController.xib */,
+				1B4DC7DD273139E3009D49B4 /* DeveloperViewController.swift */,
+			);
+			path = Developer;
+			sourceTree = "<group>";
+		};
+		1B4DC7DE273139E3009D49B4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7DF273139E3009D49B4 /* Constant.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1B4DC7E0273139E3009D49B4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7E1273139E3009D49B4 /* SprintInteractor.swift */,
+				1B4DC7E2273139E3009D49B4 /* VoteInteractor.swift */,
+				1B4DC7E3273139E3009D49B4 /* StoryInteractor.swift.swift */,
+				1B4DC7E4273139E3009D49B4 /* DeveloperInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1B4DC7E5273139E3009D49B4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7E6273139E3009D49B4 /* Vote */,
+				1B4DC7E9273139E3009D49B4 /* Developer */,
+				1B4DC7EC273139E3009D49B4 /* Sprint */,
+				1B4DC7EF273139E3009D49B4 /* Story */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1B4DC7E6273139E3009D49B4 /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7E7273139E3009D49B4 /* VoteClient.swift */,
+				1B4DC7E8273139E3009D49B4 /* Vote.swift */,
+			);
+			path = Vote;
+			sourceTree = "<group>";
+		};
+		1B4DC7E9273139E3009D49B4 /* Developer */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7EA273139E3009D49B4 /* Developer.swift */,
+				1B4DC7EB273139E3009D49B4 /* DeveloperClient.swift */,
+			);
+			path = Developer;
+			sourceTree = "<group>";
+		};
+		1B4DC7EC273139E3009D49B4 /* Sprint */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7ED273139E3009D49B4 /* SprintClient.swift */,
+				1B4DC7EE273139E3009D49B4 /* Sprint.swift */,
+			);
+			path = Sprint;
+			sourceTree = "<group>";
+		};
+		1B4DC7EF273139E3009D49B4 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DC7F0273139E3009D49B4 /* StoryClient.swift.swift */,
+				1B4DC7F1273139E3009D49B4 /* Story.swift */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
 		1B7DBAF8273137D600DAD151 = {
 			isa = PBXGroup;
 			children = (
 				1B7DBB03273137D600DAD151 /* ScrumPoker */,
 				1B7DBB02273137D600DAD151 /* Products */,
+				82258C626D8C886B9FC00CB2 /* Pods */,
+				D0861378B3906D19F590C30A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +182,43 @@
 		1B7DBB03273137D600DAD151 /* ScrumPoker */ = {
 			isa = PBXGroup;
 			children = (
+				1B4DC7E5273139E3009D49B4 /* Entity */,
+				1B4DC7E0273139E3009D49B4 /* Interactor */,
+				1B4DC7D8273139E3009D49B4 /* Presenter */,
+				1B4DC7DE273139E3009D49B4 /* Util */,
+				1B4DC7DA273139E3009D49B4 /* View */,
+				1B7DBB182731383600DAD151 /* Router */,
 				1B7DBB04273137D600DAD151 /* AppDelegate.swift */,
-				1B7DBB06273137D600DAD151 /* SceneDelegate.swift */,
-				1B7DBB08273137D600DAD151 /* ViewController.swift */,
-				1B7DBB0A273137D600DAD151 /* Main.storyboard */,
 				1B7DBB0D273137D600DAD151 /* Assets.xcassets */,
 				1B7DBB0F273137D600DAD151 /* LaunchScreen.storyboard */,
 				1B7DBB12273137D600DAD151 /* Info.plist */,
 			);
 			path = ScrumPoker;
+			sourceTree = "<group>";
+		};
+		1B7DBB182731383600DAD151 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1B7DBB192731386000DAD151 /* DeveloperRouter.swift.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		82258C626D8C886B9FC00CB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10B0AD252BB48DB6FEE2A7A9 /* Pods-ScrumPoker.debug.xcconfig */,
+				29D5E055B1760BFBD04629C3 /* Pods-ScrumPoker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0861378B3906D19F590C30A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36C54AEBCB3AF15A7DA40295 /* Pods_ScrumPoker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B7DBB15273137D600DAD151 /* Build configuration list for PBXNativeTarget "ScrumPoker" */;
 			buildPhases = (
+				A05FAF9BCE66822C7F2B74B6 /* [CP] Check Pods Manifest.lock */,
 				1B7DBAFD273137D600DAD151 /* Sources */,
 				1B7DBAFE273137D600DAD151 /* Frameworks */,
 				1B7DBAFF273137D600DAD151 /* Resources */,
+				5C8DF5F606EF43D6B5C1033D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,35 +282,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B7DBB11273137D600DAD151 /* LaunchScreen.storyboard in Resources */,
+				1B4DC7F3273139E4009D49B4 /* DeveloperViewController.xib in Resources */,
 				1B7DBB0E273137D600DAD151 /* Assets.xcassets in Resources */,
-				1B7DBB0C273137D600DAD151 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C8DF5F606EF43D6B5C1033D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScrumPoker/Pods-ScrumPoker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScrumPoker/Pods-ScrumPoker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScrumPoker/Pods-ScrumPoker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A05FAF9BCE66822C7F2B74B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrumPoker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B7DBAFD273137D600DAD151 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B7DBB09273137D600DAD151 /* ViewController.swift in Sources */,
+				1B4DC7FA273139E4009D49B4 /* VoteClient.swift in Sources */,
+				1B4DC7F5273139E4009D49B4 /* Constant.swift in Sources */,
+				1B4DC801273139E4009D49B4 /* Story.swift in Sources */,
+				1B4DC7FB273139E4009D49B4 /* Vote.swift in Sources */,
+				1B4DC7FD273139E4009D49B4 /* DeveloperClient.swift in Sources */,
+				1B4DC7F2273139E4009D49B4 /* DeveloperPresenter.swift in Sources */,
+				1B7DBB1A2731386000DAD151 /* DeveloperRouter.swift.swift in Sources */,
+				1B4DC7F8273139E4009D49B4 /* StoryInteractor.swift.swift in Sources */,
+				1B4DC7FC273139E4009D49B4 /* Developer.swift in Sources */,
+				1B4DC7F6273139E4009D49B4 /* SprintInteractor.swift in Sources */,
 				1B7DBB05273137D600DAD151 /* AppDelegate.swift in Sources */,
-				1B7DBB07273137D600DAD151 /* SceneDelegate.swift in Sources */,
+				1B4DC7F9273139E4009D49B4 /* DeveloperInteractor.swift in Sources */,
+				1B4DC7FF273139E4009D49B4 /* Sprint.swift in Sources */,
+				1B4DC7FE273139E4009D49B4 /* SprintClient.swift in Sources */,
+				1B4DC7F7273139E4009D49B4 /* VoteInteractor.swift in Sources */,
+				1B4DC7F4273139E4009D49B4 /* DeveloperViewController.swift in Sources */,
+				1B4DC800273139E4009D49B4 /* StoryClient.swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1B7DBB0A273137D600DAD151 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B7DBB0B273137D600DAD151 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B7DBB0F273137D600DAD151 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +488,7 @@
 		};
 		1B7DBB16273137D600DAD151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B0AD252BB48DB6FEE2A7A9 /* Pods-ScrumPoker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +498,7 @@
 				INFOPLIST_FILE = ScrumPoker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +516,7 @@
 		};
 		1B7DBB17273137D600DAD151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29D5E055B1760BFBD04629C3 /* Pods-ScrumPoker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +526,7 @@
 				INFOPLIST_FILE = ScrumPoker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
