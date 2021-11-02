@@ -8,5 +8,5 @@
 import Foundation
 
 struct Developer: Codable {
-    let nome, email: String?
+    var nome, email: String?
 }
