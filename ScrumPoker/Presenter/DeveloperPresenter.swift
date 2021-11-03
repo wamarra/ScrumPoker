@@ -24,7 +24,7 @@ class DeveloperPresenter {
     func bind() {
         if let view = self.view {
             view.developerObserver
-                .debounce(DispatchTimeInterval.seconds(3), scheduler: MainScheduler.instance)
+                .debounce(DispatchTimeInterval.seconds(1), scheduler: MainScheduler.instance)
                 .bind { [weak self] developer in
                 view.setLoading(true)
                 
