@@ -8,5 +8,6 @@
 import Foundation
 
 struct Developer: Codable {
+    var id: Int?
     var nome, email: String?
 }

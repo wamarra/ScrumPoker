@@ -11,16 +11,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let router = DeveloperRouter()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let window = application.windows.first ?? UIWindow(frame: UIScreen.main.bounds)
-        router.present(on: window)
-        self.window = window
-        window.makeKeyAndVisible()
-         
+        window = UIWindow(frame: UIScreen.main.bounds)
+        AppRouter().present(on: window!)
         return true
     }
 }
-

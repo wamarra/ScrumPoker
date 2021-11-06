@@ -84,8 +84,8 @@ final class RxPickerViewAdapter<Sequence: Swift.Sequence>: RxPickerViewSequenceD
         super.init()
     }
     
-    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        viewForRow(row, items[row], view)
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing saveViewController: UIView?) -> UIView {
+        viewForRow(row, items[row], saveViewController)
     }
 }
 

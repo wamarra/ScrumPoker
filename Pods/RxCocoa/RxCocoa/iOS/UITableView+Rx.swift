@@ -295,12 +295,12 @@ extension Reactive where Base: UITableView {
      ```
     */
     public func modelSelected<T>(_ modelType: T.Type) -> ControlEvent<T> {
-        let source: Observable<T> = self.itemSelected.flatMap { [weak view = self.base as UITableView] indexPath -> Observable<T> in
-            guard let view = view else {
+        let source: Observable<T> = self.itemSelected.flatMap { [weak saveViewController = self.base as UITableView] indexPath -> Observable<T> in
+            guard let saveViewController = saveViewController else {
                 return Observable.empty()
             }
 
-            return Observable.just(try view.rx.model(at: indexPath))
+            return Observable.just(try saveViewController.rx.model(at: indexPath))
         }
         
         return ControlEvent(events: source)
@@ -318,12 +318,12 @@ extension Reactive where Base: UITableView {
      ```
      */
     public func modelDeselected<T>(_ modelType: T.Type) -> ControlEvent<T> {
-         let source: Observable<T> = self.itemDeselected.flatMap { [weak view = self.base as UITableView] indexPath -> Observable<T> in
-             guard let view = view else {
+         let source: Observable<T> = self.itemDeselected.flatMap { [weak saveViewController = self.base as UITableView] indexPath -> Observable<T> in
+             guard let saveViewController = saveViewController else {
                  return Observable.empty()
              }
 
-            return Observable.just(try view.rx.model(at: indexPath))
+            return Observable.just(try saveViewController.rx.model(at: indexPath))
         }
 
         return ControlEvent(events: source)
@@ -341,12 +341,12 @@ extension Reactive where Base: UITableView {
      ```
      */
     public func modelDeleted<T>(_ modelType: T.Type) -> ControlEvent<T> {
-        let source: Observable<T> = self.itemDeleted.flatMap { [weak view = self.base as UITableView] indexPath -> Observable<T> in
-            guard let view = view else {
+        let source: Observable<T> = self.itemDeleted.flatMap { [weak saveViewController = self.base as UITableView] indexPath -> Observable<T> in
+            guard let saveViewController = saveViewController else {
                 return Observable.empty()
             }
             
-            return Observable.just(try view.rx.model(at: indexPath))
+            return Observable.just(try saveViewController.rx.model(at: indexPath))
         }
         
         return ControlEvent(events: source)
