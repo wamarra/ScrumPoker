@@ -21,6 +21,8 @@ class VoteController: UIViewController {
     var presenter: VotePresenterToView!
     let disposeBag = DisposeBag()
     
+    private var vote: Vote?
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var storyField: UITextField!
@@ -38,6 +40,16 @@ class VoteController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewDidLoad()
+        bind()
+    }
+    
+    private func bind() {
+        presenter.registeredVote.bind { [weak self] vote in
+            self?.vote = vote
+            self?.showToast(message: "Voto computado com sucesso!")
+        }
+        .disposed(by: disposeBag)
     }
 }
 
