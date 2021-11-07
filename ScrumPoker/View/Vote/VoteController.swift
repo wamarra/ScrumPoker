@@ -30,6 +30,10 @@ class VoteController: UIViewController {
     @IBOutlet weak var pointsField: UITextField!
     
     @IBAction func onRegisterVote(_ sender: UIButton) {
+        guard let story = storyField.text,
+                let developer = developerField.text,
+                let points = pointsField.text else { return }
+        voteBehavior.accept(Vote(idEstoria: Int(story), idDesenvolvedor: Int(developer), pontos: Int(points)))
     }
     
     override func viewDidLoad() {

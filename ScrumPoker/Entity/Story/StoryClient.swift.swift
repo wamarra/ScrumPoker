@@ -8,6 +8,7 @@
 import Foundation
 import RxSwift
 import RxAlamofire
+import Alamofire
 
 struct StoryClient {
     
@@ -19,20 +20,19 @@ struct StoryClient {
     }
     
     static func saveStory(story: Story) -> Observable<Story> {
-        /*if let jsonData = try? JSONEncoder().encode(story) {
-            RxAlamofire.upload(
-                jsonData,
-                to: "minhaUrl",
-                method: .post,
-                headers: ["chave":"valor"])
-                .map { response in
-                    
-                }
-        }*/
-        return RxAlamofire.requestDecodable(.post, "\(Constant.kBaseURL)/estoria")
-            .map { (response, story: Story) in
-                return story
+        if let jsonData = try? JSONEncoder().encode(story) {
+            
+            var request = URLRequest(url: URL(string: "\(Constant.kBaseURL)/estoria")!)
+            request.httpBody = jsonData
+            request.httpMethod = Constant.kPostMethod
+            request.setValue(Constant.kApplicationJson, forHTTPHeaderField: Constant.kContentType)
+            
+            return RxAlamofire.request(request as URLRequestConvertible).responseJSON().map { response in
+                return try response.result.get() as? Story ?? story
             }
+        }
+        
+        return Observable.empty()
     }
     
     static func getStory(by id: Int) -> Observable<Story> {

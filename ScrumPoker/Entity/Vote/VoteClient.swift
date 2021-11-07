@@ -8,14 +8,25 @@
 import Foundation
 import RxSwift
 import RxAlamofire
+import Alamofire
 
 struct VoteClient {
     
     static func saveVote(vote: Vote) -> Observable<Vote> {
-        return RxAlamofire.requestDecodable(.post, "\(Constant.kBaseURL)/voto")
-            .map { (response, vote: Vote) in
-                return vote
+        
+        if let jsonData = try? JSONEncoder().encode(vote) {
+            
+            var request = URLRequest(url: URL(string: "\(Constant.kBaseURL)/voto")!)
+            request.httpBody = jsonData
+            request.httpMethod = Constant.kPostMethod
+            request.setValue(Constant.kApplicationJson, forHTTPHeaderField: Constant.kContentType)
+            
+            return RxAlamofire.request(request as URLRequestConvertible).responseJSON().map { response in
+                return try response.result.get() as? Vote ?? vote
             }
+        }
+        
+        return Observable.empty()
     }
 }
 
