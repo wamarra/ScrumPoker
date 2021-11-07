@@ -29,11 +29,8 @@ class DeveloperPresenter {
     
     func bind() {
         if let view = self.saveViewController {
-            view.developerObserver
-                .debounce(DispatchTimeInterval.seconds(1), scheduler: MainScheduler.instance)
-                .bind { [weak self] developer in
+            view.developerObserver.bind { [weak self] developer in
                 view.setLoading(true)
-                
                 self?.interactor?.saveDeveloper(with: developer)
             }
             .disposed(by: disposeBag)

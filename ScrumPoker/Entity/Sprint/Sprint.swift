@@ -8,6 +8,6 @@
 import Foundation
 
 struct Sprint: Codable {
-    let id: Int?
-    let nome, link: String?
+    var id: Int?
+    var nome, link: String?
 }

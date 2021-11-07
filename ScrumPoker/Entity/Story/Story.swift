@@ -8,7 +8,7 @@
 import Foundation
 
 struct Story: Codable {
-    let id, idSprint: Int?
-    let nome, link: String?
-    let pontuacao: Int?
+    var id, idSprint: Int?
+    var nome, link: String?
+    var pontuacao: Int?
 }

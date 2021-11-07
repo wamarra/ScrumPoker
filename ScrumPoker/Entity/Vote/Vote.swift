@@ -8,6 +8,6 @@
 import Foundation
 
 struct Vote: Codable {
-    let idEstoria, idDesenvolvedor, pontos: Int?
-    let dataHora: String?
+    var idEstoria, idDesenvolvedor, pontos: Int?
+    var dataHora: String?
 }

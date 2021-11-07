@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Cxl-80-FBF">
-                    <rect key="frame" x="20" y="195" width="374" height="145"/>
+                    <rect key="frame" x="20" y="225" width="374" height="145"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="did-bg-8Un">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
@@ -49,10 +50,26 @@
                     </subviews>
                 </stackView>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7hS-DW-p5r">
-                    <rect key="frame" x="181" y="136" width="37" height="37"/>
+                    <rect key="frame" x="181" y="166" width="37" height="37"/>
                 </activityIndicatorView>
+                <navigationBar clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YZ-A9-nFz">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" name="AccentColor"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Cadastrar Desenvolvedor" id="PY2-0N-05g">
+                            <barButtonItem key="rightBarButtonItem" title="Item" image="magnifyingglass" catalog="system" id="gF2-J1-Bg4">
+                                <connections>
+                                    <action selector="onFindDeveloper:" destination="-1" id="lQB-hv-49O"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYV-BM-guT">
-                    <rect key="frame" x="87" y="416" width="225" height="41"/>
+                    <rect key="frame" x="109" y="447" width="180" height="41"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="41" id="nej-sF-lid"/>
                     </constraints>
@@ -67,18 +84,22 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Cxl-80-FBF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0Em-hV-grz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fYV-BM-guT" secondAttribute="trailing" constant="102" id="9Yr-OP-oAh"/>
-                <constraint firstItem="fYV-BM-guT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="87" id="Eea-NZ-kYe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fYV-BM-guT" secondAttribute="trailing" constant="125" id="9Yr-OP-oAh"/>
+                <constraint firstItem="fYV-BM-guT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="109" id="Eea-NZ-kYe"/>
                 <constraint firstItem="Cxl-80-FBF" firstAttribute="top" secondItem="7hS-DW-p5r" secondAttribute="bottom" constant="22" id="d8E-Em-XMf"/>
-                <constraint firstItem="fYV-BM-guT" firstAttribute="centerX" secondItem="7hS-DW-p5r" secondAttribute="centerX" id="ehL-vu-Q4c"/>
-                <constraint firstItem="fYV-BM-guT" firstAttribute="top" secondItem="Cxl-80-FBF" secondAttribute="bottom" constant="76" id="gCz-t4-MTh"/>
+                <constraint firstItem="fYV-BM-guT" firstAttribute="centerX" secondItem="7hS-DW-p5r" secondAttribute="centerX" constant="-0.5" id="ehL-vu-Q4c"/>
+                <constraint firstItem="fYV-BM-guT" firstAttribute="top" secondItem="Cxl-80-FBF" secondAttribute="bottom" constant="77" id="gCz-t4-MTh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cxl-80-FBF" secondAttribute="trailing" constant="20" id="mMf-Ws-3cB"/>
-                <constraint firstItem="Cxl-80-FBF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="195" id="qkp-ey-bJw"/>
+                <constraint firstItem="Cxl-80-FBF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="225" id="qkp-ey-bJw"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="75"/>
         </view>
     </objects>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

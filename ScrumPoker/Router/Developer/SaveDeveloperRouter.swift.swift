@@ -7,11 +7,7 @@
 
 import UIKit
 
-protocol SaveDeveloperWireframe {
-    static func assembleModule() -> UIViewController
-}
-
-class SaveDeveloperRouter: SaveDeveloperWireframe {
+class SaveDeveloperRouter: ModuleWireframe {
     
     weak var viewController: UIViewController?
     
@@ -28,18 +24,7 @@ class SaveDeveloperRouter: SaveDeveloperWireframe {
         router.viewController = view
         interactor.output = presenter
         
-        view.title = "Pesquisar"
-        view.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [view]
-        
-        let navigation = UINavigationController(rootViewController: tabBarController)
-        navigation.navigationBar.items?[0].title = "Cadastrar Desenvolvedor"
-        
-        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.systemBlue]
-        navigation.navigationBar.titleTextAttributes = textAttributes
-        
-        return navigation
+        return view
     }
     
     func showViewFindDeveloper() {

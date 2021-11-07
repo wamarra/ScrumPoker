@@ -34,6 +34,10 @@ class SaveDeveloperController: UIViewController, UITabBarControllerDelegate {
         developerBehavior.accept(Developer(nome: name, email: email))
     }
     
+    @IBAction func onFindDeveloper(_ sender: UIBarButtonItem) {
+        presenter.showViewFindDeveloper()
+    }
+    
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         let tabBarIndex = tabBarController.selectedIndex
         if tabBarIndex == 0 {

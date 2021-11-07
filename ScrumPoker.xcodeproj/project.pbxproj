@@ -29,6 +29,20 @@
 		1B7DBB0E273137D600DAD151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DBB0D273137D600DAD151 /* Assets.xcassets */; };
 		1B7DBB11273137D600DAD151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7DBB0F273137D600DAD151 /* LaunchScreen.storyboard */; };
 		1B7DBB1A2731386000DAD151 /* SaveDeveloperRouter.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DBB192731386000DAD151 /* SaveDeveloperRouter.swift.swift */; };
+		1BC5E6B42736EF5C006F3618 /* ListSprintRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6B32736EF5C006F3618 /* ListSprintRouter.swift */; };
+		1BC5E6B82736F824006F3618 /* ListStoryBySprintRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6B72736F824006F3618 /* ListStoryBySprintRouter.swift */; };
+		1BC5E6BB2736F8C7006F3618 /* VoteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6BA2736F8C7006F3618 /* VoteRouter.swift */; };
+		1BC5E6BE2736FE6C006F3618 /* ListSprintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6BC2736FE6C006F3618 /* ListSprintController.swift */; };
+		1BC5E6BF2736FE6C006F3618 /* ListSprintController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5E6BD2736FE6C006F3618 /* ListSprintController.xib */; };
+		1BC5E6C127370D8B006F3618 /* SprintPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6C027370D8B006F3618 /* SprintPresenter.swift */; };
+		1BC5E6C527374B84006F3618 /* SaveSprintRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6C427374B84006F3618 /* SaveSprintRouter.swift */; };
+		1BC5E6C8273759B6006F3618 /* SaveSprintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6C6273759B6006F3618 /* SaveSprintController.swift */; };
+		1BC5E6C9273759B6006F3618 /* SaveSprintController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5E6C7273759B6006F3618 /* SaveSprintController.xib */; };
+		1BC5E6CC273766F1006F3618 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6CA273766F1006F3618 /* VoteController.swift */; };
+		1BC5E6CD273766F1006F3618 /* VoteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5E6CB273766F1006F3618 /* VoteController.xib */; };
+		1BC5E6CF27377029006F3618 /* VotePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6CE27377029006F3618 /* VotePresenter.swift */; };
+		1BC5E6D22737979F006F3618 /* ListStoryBySprintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6D02737979F006F3618 /* ListStoryBySprintController.swift */; };
+		1BC5E6D32737979F006F3618 /* ListStoryBySprintController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5E6D12737979F006F3618 /* ListStoryBySprintController.xib */; };
 		1BF93AEE27335603002318DD /* FindDeveloperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF93AEC27335603002318DD /* FindDeveloperController.swift */; };
 		1BF93AEF27335603002318DD /* FindDeveloperController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF93AED27335603002318DD /* FindDeveloperController.xib */; };
 		72C0A53BF1DCDF9E15943A39 /* Pods_ScrumPoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C54AEBCB3AF15A7DA40295 /* Pods_ScrumPoker.framework */; };
@@ -60,6 +74,20 @@
 		1B7DBB10273137D600DAD151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B7DBB12273137D600DAD151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B7DBB192731386000DAD151 /* SaveDeveloperRouter.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDeveloperRouter.swift.swift; sourceTree = "<group>"; };
+		1BC5E6B32736EF5C006F3618 /* ListSprintRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSprintRouter.swift; sourceTree = "<group>"; };
+		1BC5E6B72736F824006F3618 /* ListStoryBySprintRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStoryBySprintRouter.swift; sourceTree = "<group>"; };
+		1BC5E6BA2736F8C7006F3618 /* VoteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteRouter.swift; sourceTree = "<group>"; };
+		1BC5E6BC2736FE6C006F3618 /* ListSprintController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSprintController.swift; sourceTree = "<group>"; };
+		1BC5E6BD2736FE6C006F3618 /* ListSprintController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListSprintController.xib; sourceTree = "<group>"; };
+		1BC5E6C027370D8B006F3618 /* SprintPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintPresenter.swift; sourceTree = "<group>"; };
+		1BC5E6C427374B84006F3618 /* SaveSprintRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSprintRouter.swift; sourceTree = "<group>"; };
+		1BC5E6C6273759B6006F3618 /* SaveSprintController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSprintController.swift; sourceTree = "<group>"; };
+		1BC5E6C7273759B6006F3618 /* SaveSprintController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveSprintController.xib; sourceTree = "<group>"; };
+		1BC5E6CA273766F1006F3618 /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		1BC5E6CB273766F1006F3618 /* VoteController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoteController.xib; sourceTree = "<group>"; };
+		1BC5E6CE27377029006F3618 /* VotePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotePresenter.swift; sourceTree = "<group>"; };
+		1BC5E6D02737979F006F3618 /* ListStoryBySprintController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStoryBySprintController.swift; sourceTree = "<group>"; };
+		1BC5E6D12737979F006F3618 /* ListStoryBySprintController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListStoryBySprintController.xib; sourceTree = "<group>"; };
 		1BF93AEC27335603002318DD /* FindDeveloperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDeveloperController.swift; sourceTree = "<group>"; };
 		1BF93AED27335603002318DD /* FindDeveloperController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindDeveloperController.xib; sourceTree = "<group>"; };
 		29D5E055B1760BFBD04629C3 /* Pods-ScrumPoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumPoker.release.xcconfig"; path = "Target Support Files/Pods-ScrumPoker/Pods-ScrumPoker.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				1B4DC7D9273139E3009D49B4 /* DeveloperPresenter.swift */,
+				1BC5E6C027370D8B006F3618 /* SprintPresenter.swift */,
+				1BC5E6CE27377029006F3618 /* VotePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -89,6 +119,9 @@
 		1B4DC7DA273139E3009D49B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1BC5E6C32737272A006F3618 /* Story */,
+				1BC5E6C227372722006F3618 /* Vote */,
+				1BC5E6B52736F0C0006F3618 /* Sprint */,
 				1B4DC7DB273139E3009D49B4 /* Developer */,
 			);
 			path = View;
@@ -171,13 +204,13 @@
 			path = Story;
 			sourceTree = "<group>";
 		};
-		1B7B283F2736361C00762D1E /* developer */ = {
+		1B7B283F2736361C00762D1E /* Developer */ = {
 			isa = PBXGroup;
 			children = (
 				1B7DBB192731386000DAD151 /* SaveDeveloperRouter.swift.swift */,
 				1B7B283D2736360000762D1E /* FindDeveloperRouter.swift */,
 			);
-			path = developer;
+			path = Developer;
 			sourceTree = "<group>";
 		};
 		1B7DBAF8273137D600DAD151 = {
@@ -218,10 +251,67 @@
 		1B7DBB182731383600DAD151 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				1B7B283F2736361C00762D1E /* developer */,
+				1BC5E6B92736F8B0006F3618 /* Vote */,
+				1BC5E6B62736F813006F3618 /* Story */,
+				1BC5E6B22736EEEA006F3618 /* Sprint */,
+				1B7B283F2736361C00762D1E /* Developer */,
 				1B7B283B273630A100762D1E /* AppRouter.swift.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		1BC5E6B22736EEEA006F3618 /* Sprint */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5E6B32736EF5C006F3618 /* ListSprintRouter.swift */,
+				1BC5E6C427374B84006F3618 /* SaveSprintRouter.swift */,
+			);
+			path = Sprint;
+			sourceTree = "<group>";
+		};
+		1BC5E6B52736F0C0006F3618 /* Sprint */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5E6BC2736FE6C006F3618 /* ListSprintController.swift */,
+				1BC5E6BD2736FE6C006F3618 /* ListSprintController.xib */,
+				1BC5E6C6273759B6006F3618 /* SaveSprintController.swift */,
+				1BC5E6C7273759B6006F3618 /* SaveSprintController.xib */,
+			);
+			path = Sprint;
+			sourceTree = "<group>";
+		};
+		1BC5E6B62736F813006F3618 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5E6B72736F824006F3618 /* ListStoryBySprintRouter.swift */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		1BC5E6B92736F8B0006F3618 /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5E6BA2736F8C7006F3618 /* VoteRouter.swift */,
+			);
+			path = Vote;
+			sourceTree = "<group>";
+		};
+		1BC5E6C227372722006F3618 /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5E6CA273766F1006F3618 /* VoteController.swift */,
+				1BC5E6CB273766F1006F3618 /* VoteController.xib */,
+			);
+			path = Vote;
+			sourceTree = "<group>";
+		};
+		1BC5E6C32737272A006F3618 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				1BC5E6D02737979F006F3618 /* ListStoryBySprintController.swift */,
+				1BC5E6D12737979F006F3618 /* ListStoryBySprintController.xib */,
+			);
+			path = Story;
 			sourceTree = "<group>";
 		};
 		82258C626D8C886B9FC00CB2 /* Pods */ = {
@@ -301,9 +391,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BC5E6BF2736FE6C006F3618 /* ListSprintController.xib in Resources */,
+				1BC5E6C9273759B6006F3618 /* SaveSprintController.xib in Resources */,
 				1B4DC80927317E02009D49B4 /* SaveDeveloperController.xib in Resources */,
 				1B7DBB11273137D600DAD151 /* LaunchScreen.storyboard in Resources */,
+				1BC5E6D32737979F006F3618 /* ListStoryBySprintController.xib in Resources */,
 				1BF93AEF27335603002318DD /* FindDeveloperController.xib in Resources */,
+				1BC5E6CD273766F1006F3618 /* VoteController.xib in Resources */,
 				1B7DBB0E273137D600DAD151 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,15 +460,25 @@
 				1B7DBB1A2731386000DAD151 /* SaveDeveloperRouter.swift.swift in Sources */,
 				1B4DC7F8273139E4009D49B4 /* StoryInteractor.swift.swift in Sources */,
 				1B4DC7FC273139E4009D49B4 /* Developer.swift in Sources */,
+				1BC5E6BB2736F8C7006F3618 /* VoteRouter.swift in Sources */,
+				1BC5E6D22737979F006F3618 /* ListStoryBySprintController.swift in Sources */,
 				1B4DC7F6273139E4009D49B4 /* SprintInteractor.swift in Sources */,
 				1B7DBB05273137D600DAD151 /* AppDelegate.swift in Sources */,
 				1B4DC7F9273139E4009D49B4 /* DeveloperInteractor.swift in Sources */,
+				1BC5E6C127370D8B006F3618 /* SprintPresenter.swift in Sources */,
+				1BC5E6B82736F824006F3618 /* ListStoryBySprintRouter.swift in Sources */,
 				1B7B283E2736360000762D1E /* FindDeveloperRouter.swift in Sources */,
 				1B4DC7FF273139E4009D49B4 /* Sprint.swift in Sources */,
+				1BC5E6C8273759B6006F3618 /* SaveSprintController.swift in Sources */,
+				1BC5E6B42736EF5C006F3618 /* ListSprintRouter.swift in Sources */,
 				1B7B283C273630A100762D1E /* AppRouter.swift.swift in Sources */,
+				1BC5E6C527374B84006F3618 /* SaveSprintRouter.swift in Sources */,
 				1B4DC7FE273139E4009D49B4 /* SprintClient.swift in Sources */,
 				1B4DC80827317E02009D49B4 /* SaveDeveloperController.swift in Sources */,
+				1BC5E6BE2736FE6C006F3618 /* ListSprintController.swift in Sources */,
 				1B4DC7F7273139E4009D49B4 /* VoteInteractor.swift in Sources */,
+				1BC5E6CF27377029006F3618 /* VotePresenter.swift in Sources */,
+				1BC5E6CC273766F1006F3618 /* VoteController.swift in Sources */,
 				1BF93AEE27335603002318DD /* FindDeveloperController.swift in Sources */,
 				1B4DC800273139E4009D49B4 /* StoryClient.swift.swift in Sources */,
 			);

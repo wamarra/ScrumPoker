@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 
 protocol SprintInteractorOutput: AnyObject {
-    func savedSprint(sprint: Sprint)
+    func sprintSaved(sprint: Sprint)
     func sprintDeleted()
     func sprintsRecovered(sprints: [Sprint])
     func sprintRecovered(sprint: Sprint)
@@ -32,7 +32,7 @@ extension SprintInteractor: SprintInteractorInput {
     func saveSprint(sprint: Sprint) {
         SprintClient.saveSprint(sprint: sprint).subscribe { [weak self] event in
             if let sprint = event.element {
-                self?.output?.savedSprint(sprint: sprint)
+                self?.output?.sprintSaved(sprint: sprint)
             }
             if let error = event.error {
                 self?.output?.errorOccurred(error: error)
