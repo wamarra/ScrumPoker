@@ -30,13 +30,13 @@ class AppRouter: RootWireframe {
         sprintRouter.title = "Sprint"
         sprintRouter.tabBarItem.image = UIImage(systemName: "clock.arrow.circlepath")
         
-        storyRouter.title = "Story"
+        storyRouter.title = "Estória"
         storyRouter.tabBarItem.image = UIImage(systemName: "list.bullet.rectangle")
         
-        voteRouter.title = "Vote"
+        voteRouter.title = "Votação"
         voteRouter.tabBarItem.image = UIImage(systemName: "checkmark.bubble")
         
-        developerRouter.title = "Developer"
+        developerRouter.title = "Desenvolvedor"
         developerRouter.tabBarItem.image = UIImage(systemName: "person")
         
         tabBarController.viewControllers = [sprintRouter, storyRouter, voteRouter, developerRouter]

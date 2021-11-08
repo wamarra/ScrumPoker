@@ -13,7 +13,7 @@ protocol StoryInteractorOutput: AnyObject {
     func storyDeleted()
     func voteFinished(story: Story)
     func storyRecovered(story: Story)
-    func storiesRecovered(story: [Story])
+    func storiesRecovered(stories: [Story])
     func errorOccurred(error: Error?)
 }
 
@@ -22,7 +22,7 @@ protocol StoryInteractorInput: AnyObject {
     func deleteStory(by id: Int)
     func endVoting(by id: Int)
     func getStory(by id: Int)
-    func getSprintStories(by sprintId: Int)
+    func getStories(by sprintId: Int)
 }
 
 class StoryInteractor {
@@ -79,10 +79,10 @@ extension StoryInteractor: StoryInteractorInput {
         .disposed(by: disposeBag)
     }
     
-    func getSprintStories(by sprintId: Int) {
+    func getStories(by sprintId: Int) {
         StoryClient.getSprintStories(by: sprintId).subscribe { [weak self] event in
             if let stories = event.element {
-                self?.output?.storiesRecovered(story: stories)
+                self?.output?.storiesRecovered(stories: stories)
             }
             if let error = event.error {
                 self?.output?.errorOccurred(error: error)

@@ -44,6 +44,7 @@
 		1BC5E6D22737979F006F3618 /* ListStoryBySprintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6D02737979F006F3618 /* ListStoryBySprintController.swift */; };
 		1BC5E6D32737979F006F3618 /* ListStoryBySprintController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BC5E6D12737979F006F3618 /* ListStoryBySprintController.xib */; };
 		1BC5E6D52737ADA1006F3618 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5E6D42737ADA1006F3618 /* UIViewController+Toast.swift */; };
+		1BDD2BC627389B710072754E /* StoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD2BC527389B710072754E /* StoryPresenter.swift */; };
 		1BF93AEE27335603002318DD /* FindDeveloperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF93AEC27335603002318DD /* FindDeveloperController.swift */; };
 		1BF93AEF27335603002318DD /* FindDeveloperController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BF93AED27335603002318DD /* FindDeveloperController.xib */; };
 		72C0A53BF1DCDF9E15943A39 /* Pods_ScrumPoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C54AEBCB3AF15A7DA40295 /* Pods_ScrumPoker.framework */; };
@@ -90,6 +91,7 @@
 		1BC5E6D02737979F006F3618 /* ListStoryBySprintController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStoryBySprintController.swift; sourceTree = "<group>"; };
 		1BC5E6D12737979F006F3618 /* ListStoryBySprintController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListStoryBySprintController.xib; sourceTree = "<group>"; };
 		1BC5E6D42737ADA1006F3618 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
+		1BDD2BC527389B710072754E /* StoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPresenter.swift; sourceTree = "<group>"; };
 		1BF93AEC27335603002318DD /* FindDeveloperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDeveloperController.swift; sourceTree = "<group>"; };
 		1BF93AED27335603002318DD /* FindDeveloperController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindDeveloperController.xib; sourceTree = "<group>"; };
 		29D5E055B1760BFBD04629C3 /* Pods-ScrumPoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumPoker.release.xcconfig"; path = "Target Support Files/Pods-ScrumPoker/Pods-ScrumPoker.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				1B4DC7D9273139E3009D49B4 /* DeveloperPresenter.swift */,
 				1BC5E6C027370D8B006F3618 /* SprintPresenter.swift */,
 				1BC5E6CE27377029006F3618 /* VotePresenter.swift */,
+				1BDD2BC527389B710072754E /* StoryPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				1B4DC7F2273139E4009D49B4 /* DeveloperPresenter.swift in Sources */,
 				1B7DBB1A2731386000DAD151 /* SaveDeveloperRouter.swift.swift in Sources */,
 				1B4DC7F8273139E4009D49B4 /* StoryInteractor.swift.swift in Sources */,
+				1BDD2BC627389B710072754E /* StoryPresenter.swift in Sources */,
 				1B4DC7FC273139E4009D49B4 /* Developer.swift in Sources */,
 				1BC5E6BB2736F8C7006F3618 /* VoteRouter.swift in Sources */,
 				1BC5E6D22737979F006F3618 /* ListStoryBySprintController.swift in Sources */,

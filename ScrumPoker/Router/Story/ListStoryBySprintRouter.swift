@@ -10,16 +10,13 @@ import UIKit
 class ListStoryBySprintRouter: ModuleWireframe {
     
     static func assembleModule() -> UIViewController {
-        let view = SaveDeveloperController(nibName: "SaveDeveloperController", bundle: .main)
-        let interactor = DeveloperInteractor()
-        let presenter = DeveloperPresenter()
-        let router = SaveDeveloperRouter()
+        let view = ListStoryBySprintController(nibName: "ListStoryBySprintController", bundle: .main)
+        let interactor = StoryInteractor()
+        let presenter = StoryPresenter()
         
         view.presenter = presenter
-        presenter.saveViewController = view
+        presenter.view = view
         presenter.interactor = interactor
-        presenter.router = router
-        router.viewController = view
         interactor.output = presenter
         
         return view
