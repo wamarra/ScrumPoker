@@ -27,15 +27,21 @@ class ListSprintController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func onAddSprint(_ sender: UIBarButtonItem) {
+    @objc func onAddSprint(_ sender: UIBarButtonItem) {
         presenter.showViewAddSprint()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationItem()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "defaultUserCell")
         presenter.viewDidLoad()
         loadDataBind()
+    }
+    
+    private func setupNavigationItem() {
+        navigationItem.title = "Sprints"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAddSprint(_:)))
     }
     
     private func loadDataBind() {
