@@ -34,10 +34,6 @@ class ListSprintController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "defaultUserCell")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         presenter.viewDidLoad()
         loadDataBind()
     }

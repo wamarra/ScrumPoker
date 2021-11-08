@@ -23,6 +23,8 @@
 		1B4DC801273139E4009D49B4 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC7F1273139E3009D49B4 /* Story.swift */; };
 		1B4DC80827317E02009D49B4 /* SaveDeveloperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DC80627317E02009D49B4 /* SaveDeveloperController.swift */; };
 		1B4DC80927317E02009D49B4 /* SaveDeveloperController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4DC80727317E02009D49B4 /* SaveDeveloperController.xib */; };
+		1B5AE9CA2739AE2400B3A38D /* ListSprintTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5AE9C82739AE2400B3A38D /* ListSprintTableViewController.swift */; };
+		1B5AE9CB2739AE2400B3A38D /* ListSprintTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B5AE9C92739AE2400B3A38D /* ListSprintTableViewController.xib */; };
 		1B7B283C273630A100762D1E /* AppRouter.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B283B273630A100762D1E /* AppRouter.swift.swift */; };
 		1B7B283E2736360000762D1E /* FindDeveloperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B283D2736360000762D1E /* FindDeveloperRouter.swift */; };
 		1B7DBB05273137D600DAD151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7DBB04273137D600DAD151 /* AppDelegate.swift */; };
@@ -68,6 +70,8 @@
 		1B4DC7F1273139E3009D49B4 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		1B4DC80627317E02009D49B4 /* SaveDeveloperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDeveloperController.swift; sourceTree = "<group>"; };
 		1B4DC80727317E02009D49B4 /* SaveDeveloperController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveDeveloperController.xib; sourceTree = "<group>"; };
+		1B5AE9C82739AE2400B3A38D /* ListSprintTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSprintTableViewController.swift; sourceTree = "<group>"; };
+		1B5AE9C92739AE2400B3A38D /* ListSprintTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListSprintTableViewController.xib; sourceTree = "<group>"; };
 		1B7B283B273630A100762D1E /* AppRouter.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift.swift; sourceTree = "<group>"; };
 		1B7B283D2736360000762D1E /* FindDeveloperRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDeveloperRouter.swift; sourceTree = "<group>"; };
 		1B7DBB01273137D600DAD151 /* ScrumPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrumPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +286,8 @@
 				1BC5E6BD2736FE6C006F3618 /* ListSprintController.xib */,
 				1BC5E6C6273759B6006F3618 /* SaveSprintController.swift */,
 				1BC5E6C7273759B6006F3618 /* SaveSprintController.xib */,
+				1B5AE9C82739AE2400B3A38D /* ListSprintTableViewController.swift */,
+				1B5AE9C92739AE2400B3A38D /* ListSprintTableViewController.xib */,
 			);
 			path = Sprint;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				1BC5E6D32737979F006F3618 /* ListStoryBySprintController.xib in Resources */,
 				1BF93AEF27335603002318DD /* FindDeveloperController.xib in Resources */,
 				1BC5E6CD273766F1006F3618 /* VoteController.xib in Resources */,
+				1B5AE9CB2739AE2400B3A38D /* ListSprintTableViewController.xib in Resources */,
 				1B7DBB0E273137D600DAD151 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +490,7 @@
 				1B4DC7FE273139E4009D49B4 /* SprintClient.swift in Sources */,
 				1B4DC80827317E02009D49B4 /* SaveDeveloperController.swift in Sources */,
 				1BC5E6D52737ADA1006F3618 /* UIViewController+Toast.swift in Sources */,
+				1B5AE9CA2739AE2400B3A38D /* ListSprintTableViewController.swift in Sources */,
 				1BC5E6BE2736FE6C006F3618 /* ListSprintController.swift in Sources */,
 				1B4DC7F7273139E4009D49B4 /* VoteInteractor.swift in Sources */,
 				1BC5E6CF27377029006F3618 /* VotePresenter.swift in Sources */,

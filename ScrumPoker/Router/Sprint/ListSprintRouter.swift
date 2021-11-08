@@ -24,7 +24,7 @@ class ListSprintRouter: ModuleWireframe {
         router.viewController = view
         interactor.output = presenter
         
-        return view
+        return UINavigationController(rootViewController: view)
     }
     
     func showViewAddSprint() {
