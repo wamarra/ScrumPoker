@@ -19,6 +19,6 @@ class VoteRouter: ModuleWireframe {
         presenter.interactor = interactor
         interactor.output = presenter
         
-        return view
+        return UINavigationController(rootViewController: view)
     }
 }

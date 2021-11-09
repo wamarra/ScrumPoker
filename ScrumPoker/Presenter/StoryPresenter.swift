@@ -12,29 +12,41 @@ import RxRelay
 
 protocol StoryPresenterToView: AnyObject {
     var recoveredStoriesBySprint: Observable<[Story]> { get }
-    func findStories(sprintId: Int)
+    func viewDidLoad()
+    func bindAddStory()
+    func showViewAddStory()
 }
 
 class StoryPresenter {
-    weak var view: ListStoryToPresenter?
+    weak var listController: ListStoryToPresenter?
+    weak var saveController: SaveStoryToPresenter?
     
     var interactor: StoryInteractorInput?
     var storyBehavior = BehaviorRelay<Story?>(value: nil)
     var storiesBehavior = BehaviorRelay<[Story]?>(value: nil)
+    var router: ListStoryBySprintRouter!
     let disposeBag = DisposeBag()
 }
 
 extension StoryPresenter: StoryPresenterToView {
-    func findStories(sprintId: Int) {
-        if let view = self.view {
-            view.storiesObserver.bind { [weak self] sprintId in
+    func bindAddStory() {
+        if let view = self.saveController {
+            view.storyObserver.bind { [weak self] story in
                 view.setLoading(true)
-                self?.interactor?.getStories(by: sprintId)
+                self?.interactor?.saveStory(story: story)
             }
             .disposed(by: disposeBag)
         }
     }
     
+    func viewDidLoad() {
+        self.interactor?.getStories(by: 137)
+    }
+    
+    func showViewAddStory() {
+        router.showViewAddStory()
+    }
+        
     var recoveredStoriesBySprint: Observable<[Story]> {
         return storiesBehavior.asObservable().unwrap()
     }
@@ -42,30 +54,29 @@ extension StoryPresenter: StoryPresenterToView {
 
 extension StoryPresenter: StoryInteractorOutput {
     func savedStory(story: Story) {
-        view?.setLoading(false)
         self.storyBehavior.accept(story)
     }
     
     func storyDeleted() {
-        view?.setLoading(false)
+        listController?.setLoading(false)
     }
     
     func voteFinished(story: Story) {
-        view?.setLoading(false)
+        listController?.setLoading(false)
     }
     
     func storyRecovered(story: Story) {
-        view?.setLoading(false)
+        listController?.setLoading(false)
         self.storyBehavior.accept(story)
     }
     
     func storiesRecovered(stories: [Story]) {
-        view?.setLoading(false)
+        listController?.setLoading(false)
         self.storiesBehavior.accept(stories)
     }
     
     func errorOccurred(error: Error?) {
-        view?.setLoading(false)
+        listController?.setLoading(false)
         debugPrint(error ?? "Erro ao realizar a operação")
     }
 }

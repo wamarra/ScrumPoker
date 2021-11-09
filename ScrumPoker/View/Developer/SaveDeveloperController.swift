@@ -15,7 +15,7 @@ protocol SaveDeveloperToPresenter: AnyObject {
     func setLoading(_ loading: Bool)
 }
 
-class SaveDeveloperController: UIViewController, UITabBarControllerDelegate {
+class SaveDeveloperController: UIViewController {
     
     var developerBehavior = BehaviorRelay<Developer?>(value: nil)
     var presenter: DeveloperPresenterToView!
@@ -34,22 +34,22 @@ class SaveDeveloperController: UIViewController, UITabBarControllerDelegate {
         developerBehavior.accept(Developer(nome: name, email: email))
     }
     
-    @IBAction func onFindDeveloper(_ sender: UIBarButtonItem) {
+    @objc func onFindDeveloper(_ sender: UIBarButtonItem) {
         presenter.showViewFindDeveloper()
     }
     
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        let tabBarIndex = tabBarController.selectedIndex
-        if tabBarIndex == 0 {
-            presenter.showViewFindDeveloper()
-        }
-   }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.viewDidLoad()
+        presenter.viewDidLoad()
+        setupNavigationItem()
         bind()
-        self.tabBarController?.delegate = self
+    }
+    
+    private func setupNavigationItem() {
+        navigationItem.title = "Cadastrar Desenvolvedor"
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.systemBlue]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(onFindDeveloper(_:)))
     }
     
     private func bind() {

@@ -40,8 +40,15 @@ class VoteController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationItem()
         presenter.viewDidLoad()
         bind()
+    }
+    
+    private func setupNavigationItem() {
+        navigationItem.title = "Votação"
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.systemBlue]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
     
     private func bind() {

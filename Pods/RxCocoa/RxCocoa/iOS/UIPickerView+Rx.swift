@@ -65,14 +65,14 @@
          - parameter modelType: Type of a Model which bound to the dataSource
          */
         public func modelSelected<T>(_ modelType: T.Type) -> ControlEvent<[T]> {
-            let source = itemSelected.flatMap { [weak saveViewController = self.base as UIPickerView] _, component -> Observable<[T]> in
-                guard let saveViewController = saveViewController else {
+            let source = itemSelected.flatMap { [weak view = self.base as UIPickerView] _, component -> Observable<[T]> in
+                guard let view = view else {
                     return Observable.empty()
                 }
 
-                let model: [T] = try (0 ..< saveViewController.numberOfComponents).map { component in
-                    let row = saveViewController.selectedRow(inComponent: component)
-                    return try saveViewController.rx.model(at: IndexPath(row: row, section: component))
+                let model: [T] = try (0 ..< view.numberOfComponents).map { component in
+                    let row = view.selectedRow(inComponent: component)
+                    return try view.rx.model(at: IndexPath(row: row, section: component))
                 }
 
                 return Observable.just(model)

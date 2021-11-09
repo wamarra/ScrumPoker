@@ -24,7 +24,7 @@ class SaveDeveloperRouter: ModuleWireframe {
         router.viewController = view
         interactor.output = presenter
         
-        return view
+        return UINavigationController(rootViewController: view)
     }
     
     func showViewFindDeveloper() {

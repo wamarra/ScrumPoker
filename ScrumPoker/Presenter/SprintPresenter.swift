@@ -25,16 +25,6 @@ class SprintPresenter {
     var sprintsBehavior = BehaviorRelay<[Sprint]?>(value: nil)
     var router: ListSprintRouter!
     let disposeBag = DisposeBag()
-    
-    func listBind() {
-        if let view = self.listSprintController {
-            view.sprintsObserver.bind { [weak self] _ in
-                view.setLoading(true)                
-                self?.interactor?.getSprints()
-            }
-            .disposed(by: disposeBag)
-        }
-    }
 }
 
 extension SprintPresenter: SprintPresenterToView {
@@ -47,7 +37,7 @@ extension SprintPresenter: SprintPresenterToView {
     }
     
     func viewDidLoad() {
-        listBind()
+        self.interactor?.getSprints()
     }
 }
 

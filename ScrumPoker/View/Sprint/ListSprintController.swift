@@ -1,8 +1,8 @@
 //
-//  ListSprintViewController.swift
+//  ListSprintTableViewController.swift
 //  ScrumPoker
 //
-//  Created by Wesley Marra on 06/11/21.
+//  Created by Wesley Marra on 08/11/21.
 //
 
 import UIKit
@@ -15,18 +15,14 @@ protocol ListSprintToPresenter: AnyObject {
     func setLoading(_ loading: Bool)
 }
 
-class ListSprintController: UIViewController, UITableViewDataSource {
+class ListSprintController: UITableViewController {
     
     var sprintsBehavior = BehaviorRelay<[Sprint]?>(value: nil)
     var presenter: SprintPresenterToView!
     let disposeBag = DisposeBag()
     
     private var sprints = [Sprint]()
-    
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    @IBOutlet weak var tableView: UITableView!
-    
+        
     @objc func onAddSprint(_ sender: UIBarButtonItem) {
         presenter.showViewAddSprint()
     }
@@ -34,35 +30,78 @@ class ListSprintController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationItem()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "defaultUserCell")
+        setUpTableView()
         presenter.viewDidLoad()
         loadDataBind()
+        tableView.reloadData()
     }
     
     private func setupNavigationItem() {
         navigationItem.title = "Sprints"
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.systemBlue]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAddSprint(_:)))
     }
+    
+    private func setUpTableView() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+   }
     
     private func loadDataBind() {
         presenter.sprintListed.bind { [weak self] sprints in
             self?.sprints = sprints
+            self?.tableView.reloadData()
         }
         .disposed(by: disposeBag)
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sprints.count
     }
-       
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "defaultUserCell", for: indexPath)
+
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         let sprint = sprints[indexPath.row]
            
         cell.textLabel?.text = sprint.nome
         cell.detailTextLabel?.text = sprint.link
-           
+
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+       return true
+    }
+       
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+       let delete = UIContextualAction(style: .destructive, title: "Excluir") { action, view, success in
+           success(true)
+       }
+       
+       let view = UIContextualAction(style: .normal, title: "Visualizar") { action, view, success in
+           success(true)
+       }
+       
+       return UISwipeActionsConfiguration(actions: [delete, view])
+    }
+       
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let viewStories = UIContextualAction(style: .normal, title: "Ver estórias") { action, view, success in
+            success(true)
+        }
+       return UISwipeActionsConfiguration(actions: [viewStories])
+    }
+
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+       return .none
+    }
+
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+       if editingStyle == .delete {
+           sprints.remove(at: indexPath.row)
+           tableView.deleteRows(at: [indexPath], with: .fade)
+       }
     }
 }
 
@@ -72,24 +111,5 @@ extension ListSprintController: ListSprintToPresenter {
     }
     
     func setLoading(_ loading: Bool) {
-        if loading {
-            self.activityIndicator.startAnimating()
-        } else {
-            self.activityIndicator.stopAnimating()
-        }
-    }
-}
-
-extension ListSprintController: URLSessionDataDelegate {
-    
-    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
-        if let response = dataTask.response as? HTTPURLResponse,
-           response.statusCode >= 200, response.statusCode < 300 {
-            
-            if let sprints = try? JSONDecoder().decode([Sprint].self, from: data) {
-                self.sprints = sprints
-                self.tableView.reloadData()
-            }
-        }
     }
 }
